@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRAILLE SCANNER</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="heading">
+    <div id="leftcorner">
+      <h1>BRAILLE SCANNER</h1>
+    </div>
+    <div id="rightcorner">
+      <h2>SCANNER</h2>
+      <h2>TRANSLATOR</h2>
+    </div>
+  </div>
+  <div class="mele">
+      <input class="pickimage" type="file" accept="image/*" onchange="handleImageUpload(event)">
+      <img id="preview" src="#" alt="Preview Image" style="display: none; max-width: 100%;">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    function handleImageUpload(event) {
+      const file = event.target.files[0];
+      const formData = new FormData();
+      formData.append('image', file);
+
+      axios.post('https://6e85-103-119-241-226.ngrok-free.app/scan', {path:"smile"})
+        .then(response => {
+          console.log('Response:', response.data);
+          // Handle response here
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Handle error here
+        });
+    }
+  </script>
+</body>
+</html>
+
