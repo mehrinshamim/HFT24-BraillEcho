@@ -19,4 +19,5 @@ The libraries we have used are the following
 We've used
 - javascript for frontend
 - python for backend
-- & connected them using flask & ngrok
+- & bridged them using flask & ngrok
+
