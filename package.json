@@ -4,12 +4,13 @@
   "description": "Your project description",
   "private": true,
   "scripts": {
-    "start": "cd client && npm start",
-    "dev": "cd client && npm start",
-    "install-client": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "test": "cd client && npm test"
+  "start": "react-scripts start",
+  "test": "react-scripts test",
+  "build": "react-scripts build",
+  "eject": "react-scripts eject",
+  "dev": "react-scripts start"
   },
+
   "keywords": ["keyword1", "keyword2"],
   "author": "Your Name",
   "license": "MIT"
