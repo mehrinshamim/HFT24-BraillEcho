@@ -1,11 +1,12 @@
-BraillEcho:
+Braille Echo:
 Advancing Accessibility through Technology
-Team Masala Dosa | HFT24
 
-Project Overview:
+
+PROJECT OVERVIEW:
 BraillEcho is designed to enhance accessibility for individuals with visual impairments by scanning and converting braille images into text and speech. This tool leverages the power of technology to bridge communication gaps and promote inclusivity.
 
-Key Features:
+KEY FEATURES:
+
 Braille-to-Text Conversion:
 Scans braille images and translates them into readable text using advanced image processing techniques.
 
@@ -14,5 +15,3 @@ Converts translated text into audio using gTTS, ensuring ease of understanding f
 
 Seamless Frontend-Backend Communication:
 A robust integration powered by Flask and Ngrok for smooth data flow.
-
-
